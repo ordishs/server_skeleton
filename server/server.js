@@ -10,8 +10,8 @@ const socketio = require('socket.io')
 let key
 let cert
 try {
-  const key = fs.readFileSync('~/certs/ssl.key')
-  const cert =  fs.readFileSync('~/certs/ssl.crt')    
+  key = fs.readFileSync('~/certs/ssl.key')
+  cert =  fs.readFileSync('~/certs/ssl.crt')    
 } catch (e) {
   // Ignore
 }
