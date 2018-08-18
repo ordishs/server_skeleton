@@ -52,6 +52,7 @@ if (httpsServer) {
   io.attach(httpsServer)
 }
 
+app.use(express.static(path.join(__dirname, './public')))
 app.use(express.static(path.join(__dirname, '../client/build')))
 
 io.on('connection', (socket) => {
