@@ -1,0 +1,21 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Simon Ordish <simon.ordish@masagi.co.uk> (http://masa.gi)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "pino": "^4.17.6",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
