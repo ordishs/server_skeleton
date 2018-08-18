@@ -12,8 +12,8 @@ let cert
 try {
   key = fs.readFileSync('~/certs/ssl.key')
   cert =  fs.readFileSync('~/certs/ssl.crt')    
-} catch (e) {
-  // Ignore
+} catch (err) {
+  log.warn(err)
 }
 
 const credentials = {
@@ -43,7 +43,7 @@ let httpsServer
 try {
   httpsServer = https.createServer(credentials, app)
 } catch (err) {
-  // Ignore this
+  log.warn(err)
 }
 
 const io = socketio()
